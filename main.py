@@ -42,6 +42,10 @@ class Message(BaseModel):
 class Question(BaseModel):
     question: str
 
+@app.get("/")
+async def root():
+    return {"message": "Hello, World!"}
+
 @app.post("/sendImage")
 async def receive_image(image_data: ImageData):
     # Save the base64 string of the image
