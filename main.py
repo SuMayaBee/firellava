@@ -64,7 +64,7 @@ def describe_image():
     if image_base64 is None:
         return {"error": "No image received"}
 
-    fireworks.client.api_key = os.getenv("FIREWORKS_API_KEY")
+    fireworks.client.api_key = "da2dUVTLNOZVVBTd0H9GcQoVxP2mF1G6O77aCSHeCWnB92Kj"
 
 
     response = fireworks.client.ChatCompletion.create(
@@ -91,7 +91,7 @@ async def describe_image(question: Question):
     if image_base64 is None:
         return {"error": "No image received"}
 
-    fireworks.client.api_key = os.getenv("FIREWORKS_API_KEY")
+    fireworks.client.api_key = "da2dUVTLNOZVVBTd0H9GcQoVxP2mF1G6O77aCSHeCWnB92Kj"
 
     response = fireworks.client.ChatCompletion.create(
         model = "accounts/fireworks/models/firellava-13b",
@@ -135,7 +135,7 @@ def describe_image(question: str):
     if image_base64 is None:
         return {"error": "No image received"}
 
-    fireworks.client.api_key = os.getenv("FIREWORKS_API_KEY")
+    fireworks.client.api_key = "da2dUVTLNOZVVBTd0H9GcQoVxP2mF1G6O77aCSHeCWnB92Kj"
 
     response = fireworks.client.ChatCompletion.create(
         model = "accounts/fireworks/models/firellava-13b",
